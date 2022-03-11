@@ -1,0 +1,54 @@
+*{
+    justify-content: center;
+    align-items: center;
+}
+body{
+    position: relative;
+    background-color: #F8CA11
+}
+
+.header h1{
+    width: 100%;
+    font-family: Subway;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F8CA11;
+    background: #161C1E;
+}
+.input_form{
+    position: relativ;
+    display: flex;
+    background: #F8CA11;
+}
+form{
+    text-decoration: dotted;
+}
+label{
+    color: #161C1E;
+}
+table{
+    font-size:1.8rem;   
+}
+input{
+    background-color: #F8CA11;
+    color: #161C1E;
+    height: 3.5vh;
+    width: 20vw;
+    margin-left: 5vw;
+}
+#submit{
+    background:#161C1E;
+    width:14vw;
+    height:5vh;
+    margin-top: 25px;
+    margin-left: 150px;
+    font-family: Subway;
+    font-size: 38px;
+    color: #F8CA11;
+    text-align: center;
+}
+

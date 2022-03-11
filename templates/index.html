@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car price prediction</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> 
+    </head>
+    <body>
+        <div class="header">
+            <h1>PREDICT YOUR CAR PRICE</h1>
+        </div>
+        <div class="input_form">
+            <form action="/" name="input_form" method="POST">
+                <table>
+                    <tr>
+                        <td><label>Current onroad price:</label></td>
+                        <td><input type="float" name="price" placeholder="Value in lakhs (ex: 13.48)" required/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>KMs driven:</label>                            
+                        </td>
+                        <td>
+                            <input type="number" name="kms" placeholder="KMs driven" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Fuel [0-CNG, 1-DIESEL, 2-PETROL]</label></td>
+                        <td><input type="number" name="fuel" placeholder="ENTER 0,1 OR 2" min=0 max=2 required/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Seller type [0=DIRECT, 1-INDIVIDUAL]</label></td>
+                        <td><input type="number" name="seller" placeholder="ENTER 0 OR 1" min=0 max=1 required/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Transmission type[0-AUTOMATIC, 1-MANUAL]</label></td>
+                        <td><input type="number" name="transmission" placeholder="ENTER 0 OR 1" min=0 max=1 required/></td>
+                    </tr>
+                    <tr>
+                        <td><label>NUMBER OF OWNER:</label></td>
+                        <td><input type="number" name="owner" placeholder="NUMBER OF PREVIOUS OWNERS" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label>AGE</label></td>
+                        <td><input type="number" name="age" placeholder="AGE IN YEARS" required/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="submit" name="submit" id="submit" >
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
